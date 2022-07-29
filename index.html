@@ -18,11 +18,10 @@
     />
 
     <!-- fontawesome css 1  -->
-
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -32,44 +31,47 @@
   <body>
     <div class="containerallcs">
       <!-- Start Header Section  -->
-      <header id="home" class="darkmode">
+      <header id="home">
         <!-- Start nav bar Section  -->
-        <nav class="container navbar navbar-expand-lg fixed-top">
-          <a class="navbar-brand darkmode" href="index.html">LOONHTET</a>
+        <nav class="container-fluid navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">LOONHTET</a>
 
-          <div id="nav" class="navbar-collapse collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#home" class="nav-link darkmode">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link darkmode">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#skills" class="nav-link darkmode">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link darkmode">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link darkmode">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link darkmode">Download CV</a>
-              </li>
-            </ul>
+            <div id="nav" class="navbar-collapse collapse justify-content-end">
+              <ul class="navbar-nav text-uppercase fw-bold">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+                <a href="#" class="btn fw-bold text-uppercase btnmaincs1"
+                  >Download CV</a
+                >
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#nav"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
           </div>
-
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
         </nav>
         <!-- End nav bar Section  -->
 
@@ -80,7 +82,12 @@
             style="height: 100vh"
           >
             <h1 class="h1 namecs">LOON HTET</h1>
-            <h3 style="font-family: Josefin Sans, sans-serif">
+            <h3
+              style="
+                font-family: 'Raleway', sans-serif;
+                color: var(--secondary-color);
+              "
+            >
               Front-end Web Developer
             </h3>
           </div>
@@ -90,13 +97,15 @@
       <!-- End Header Section  -->
 
       <!-- Start About Section  -->
-      <section id="about" class="bg-danger">
+      <section id="about">
         <div
-          class="container-fluid row justify-content-end align-items-center position-relative"
+          class="overflow-hidden h-100 container-fluid row justify-content-end align-items-center position-relative"
         >
+          <div class="aboutrowcs"></div>
+
           <!-- Start title  -->
           <div class="titlecs">
-            <span>About</span>
+            <span>ABOUT</span>
           </div>
           <!-- End title  -->
 
@@ -108,41 +117,103 @@
               development fields. I like to share opinions and work together as
               a group. Also flexible and good at communication skills.
             </p>
+            <a href="#" class="btn fw-bold text-uppercase btnmaincs2"
+              >Download CV</a
+            >
           </div>
+
+          <div class="aboutrowcs"></div>
         </div>
       </section>
       <!-- End About Section  -->
 
       <!-- Start Skills Section  -->
-      <section id="skills" class="bg-warning">
+      <section id="skills">
         <div>
           <div
-            class="container-fluid d-flex justify-content-around align-items-center"
+            class="overflow-hidden position-relative container-fluid d-flex flex-column justify-content-around align-items-center text-uppercase"
+            style="height: 100vh"
           >
-            <h2>html</h2>
-            <h2>css</h2>
-            <h2>bootstrap</h2>
-            <h2>javascript</h2>
-            <h2>jquery</h2>
+            <!-- Start title  -->
+            <div class="titlecontactcs">
+              <span class="">SKILLS</span>
+            </div>
+            <!-- End title  -->
+
+            <div class="skillscs">
+              <h2>html</h2>
+            </div>
+            <div class="skillscs">
+              <h2>css</h2>
+            </div>
+            <div class="skillscs">
+              <h2>bootstrap</h2>
+            </div>
+            <div class="skillscs">
+              <h2>javascript</h2>
+            </div>
+            <div class="skillscs">
+              <h2>jquery</h2>
+            </div>
           </div>
         </div>
       </section>
       <!-- End Skills Section  -->
 
       <!-- Start Projects Section  -->
-      <section id="projects" class="bg-info"></section>
+      <!-- <section id="projects" class="bg-info"></section> -->
       <!-- End Projects Section  -->
 
       <!-- Start Contact Section  -->
-      <section id="contact" class="bg-primary">
-        <h1>TITLE</h1>
-        <a href="">09951180654</a>
-        <a href="">itsloonhtet@gmail.com</a>
-        <a href="">GitHub</a>
-        <a href="">Telegram</a>
+      <section id="contact" class="overflow-hidden">
+        <div class="position-relative">
+          <!-- Start title  -->
+          <div class="titlecontactcs">
+            <span class="">CONTACT</span>
+          </div>
+          <!-- End title  -->
+
+          <div class="row text-light">
+            <a href="" class="contactbtncs"
+              ><ion-icon name="call-outline"></ion-icon
+            ></a>
+            <a href="" class="contactbtncs"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></a>
+            <a href="" class="contactbtncs"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="" class="contactbtncs"
+              ><ion-icon name="location-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+
+        <!-- Start Copyright  -->
+        <div class="copyrightcs" style="height: 10vh">
+          <p>
+            ©Copyright <span id="autoyear" style="display: inline"></span> -
+            Made by Loon Htet
+          </p>
+        </div>
+        <!-- End Copyright  -->
       </section>
       <!-- End Contact Section  -->
+
+      <footer></footer>
     </div>
+
+    <!-- Ionicons js1  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Ionicons js2  -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- Bootstrap js  -->
     <script

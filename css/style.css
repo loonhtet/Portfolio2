@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poiret+One&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@700&family=Raleway&display=swap");
 
 :root {
-  --primary-color: #1e1e1e;
-  --secondary-color: #ffff;
+  --primary-color: #060d0d;
+  --secondary-color: #fafafa;
 }
 
 .containerallcs {
@@ -12,33 +12,53 @@
 }
 
 header,
-section,
-footer {
+section {
   height: 100vh;
   scroll-snap-align: start;
 }
 
-.darkmode {
-  color: var(--secondary-color);
-
-  background-color: var(--primary-color);
-}
-
-.lightmode {
+.btnmaincs1 {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  font-family: "Raleway", sans-serif;
 }
+
+.btnmaincs2 {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-family: "Raleway", sans-serif;
+}
+/* Start Header Section  */
+header {
+  background-color: var(--primary-color);
+}
+/* End Header Section  */
 
 /* Start nav bar Section  */
 
 nav {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+  color: var(--secondary-color);
+}
+
+.navbar-brand {
+  font-family: "Poiret One", cursive;
+  font-weight: bolder;
 }
 
 .namecs {
+  color: var(--secondary-color);
   font-size: 130px;
   font-weight: bolder;
   font-family: "Poiret One", cursive;
+}
+
+.namecs h3 {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
@@ -57,15 +77,30 @@ nav {
 
 /* Start title  */
 
-.titlecs {
+.titlecs,
+.titlecontactcs {
+  pointer-events: none;
   font-family: "Poppins", sans-serif;
-  opacity: 0.5;
+  opacity: 0.1;
   font-size: 200px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
 
-  top: 0;
   position: absolute;
+}
+
+.titlecs {
+  color: var(--primary-color);
+  top: 35%;
+  right: 45%;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .titlecs {
+    top: 30%;
+    font-size: 130px;
+  }
 }
 
 /* End title  */
@@ -73,13 +108,96 @@ nav {
 /* Start About Section  */
 
 #about p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.aboutrowcs {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
 }
 
 /* End About Section  */
 
 /* Start Skills Section  */
+
+#skills {
+  background-color: var(--primary-color);
+}
+
 #skills img {
   width: 100px;
 }
+
+.skillscs {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
 /* End Skills Section  */
+
+/* Start Contact Section  */
+#contact {
+  background-color: var(--primary-color);
+}
+
+.titlecontactcs {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+
+  /* top: 0%;
+  left: 50%;
+  font-size: 250px;
+  transform: translate(-50%, 100%); */
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .titlecontactcs {
+    /* top: 100%; */
+    font-size: 100px;
+  }
+}
+
+.contactbtncs {
+  width: 25%;
+
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+ion-icon {
+  color: var(--secondary-color);
+  font-size: 50px;
+  transition: all 0.3s;
+}
+
+.contactbtncs:hover {
+  background-color: var(--secondary-color);
+  /* opacity: 0.5; */
+}
+
+.contactbtncs:hover ion-icon {
+  color: var(--primary-color);
+  transform: scale(1.3);
+}
+
+.copyrightcs {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+/* End Contact Section  */
