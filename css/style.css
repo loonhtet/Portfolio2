@@ -18,9 +18,9 @@
 }
 
 .containerallcs {
-  /* scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh; */
+  height: 100vh;
 }
 
 header,
@@ -44,6 +44,7 @@ header {
 /* Start nav bar Section  */
 
 nav {
+  height: auto;
   font-family: "Raleway", sans-serif;
 }
 
